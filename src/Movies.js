@@ -88,7 +88,7 @@ export const Movies = () => {
       const result = await axios(
         `https://sakilapagination.herokuapp.com/movies?limit=${nbItems}&order=${order}&sort=${sort}&page=${page}`
       );
-      setMovies(result.data);
+      setMovies(result.data.movies);
       setIsLoading(false);
     };
 
