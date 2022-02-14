@@ -86,7 +86,7 @@ export const Movies = () => {
     const fetchData = async () => {
       setIsLoading(true);
       const result = await axios(
-        `https://movie-project-hetic-api.herokuapp.com/api/movies?limit=${nbItems}&order=${order}&sort=${sort}&page=${page}`
+        `http://sakilapagination.herokuapp.com/movies?limit=${nbItems}&order=${order}&sort=${sort}&page=${page}`
       );
       setMovies(result.data);
       setIsLoading(false);
