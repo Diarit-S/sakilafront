@@ -142,8 +142,8 @@ export const Movies = () => {
                   variant="filled"
                 >
                   <MenuItem value={"title"}>Titre</MenuItem>
-                  <MenuItem value={"name"}>Genre</MenuItem>
-                  <MenuItem value={"rental"}>Locations</MenuItem>
+                  <MenuItem value={"category"}>Genre</MenuItem>
+                  <MenuItem value={"rental_number"}>Locations</MenuItem>
                   <MenuItem value={"rental_rate"}>Note locations</MenuItem>
                 </Select>
               </FormControl>
@@ -174,9 +174,9 @@ export const Movies = () => {
                           <StyledTableCell align="center" component="th" scope="row">
                             {movie.title}
                           </StyledTableCell>
-                          <StyledTableCell align="center">{movie.name}</StyledTableCell>
+                          <StyledTableCell align="center">{movie.category}</StyledTableCell>
                           <StyledTableCell align="center">{movie.rating}</StyledTableCell>
-                          <StyledTableCell align="center">{movie.rental}</StyledTableCell>
+                          <StyledTableCell align="center">{movie.rental_number}</StyledTableCell>
                           <StyledTableCell align="center">{movie.rental_rate} €</StyledTableCell>
                         </TableRow>
                       ))}
